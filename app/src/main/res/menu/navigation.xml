@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/action_food"
-        android:title="Makanan"
-        android:icon="@drawable/ic_home_black_24dp" />
-    <item android:id="@+id/action_movie"
-        android:title="Movie"
-        android:icon="@drawable/ic_dashboard_black_24dp" />
-    <item android:id="@+id/action_discount"
-        android:title="Discount"
-        android:icon="@drawable/ic_notifications_black_24dp" />
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/home_logo"
+        android:color="@color/white"/>
+    <item android:id="@+id/action_paket"
+        android:title="Paket"
+        android:icon="@drawable/paket_logo"
+        android:color="@color/white"/>
+    <item android:id="@+id/action_hotel"
+        android:title="Hotel"
+        android:icon="@drawable/hotel_logo"
+        android:color="@color/white"/>
 </menu>
