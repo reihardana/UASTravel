@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "801463448125",
+    "firebase_url": "https://uastravel-14174.firebaseio.com",
+    "project_id": "uastravel-14174",
+    "storage_bucket": "uastravel-14174.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801463448125:android:12c189b392dd3ab2d2f054",
+        "android_client_info": {
+          "package_name": "com.example.uastravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801463448125-keou8l1l0qqrmj0hsnv2h6jc520iu3rd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uastravel",
+            "certificate_hash": "819110f526d10221edf95fa85c4fae2111406d11"
+          }
+        },
+        {
+          "client_id": "801463448125-9v1dmfq5ehjjf9qa7seagesfo11doeho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAx6Pbx2Z92cEvyqlQ4Qc0EJGQzhL8_Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801463448125-9v1dmfq5ehjjf9qa7seagesfo11doeho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
