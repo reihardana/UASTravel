@@ -11,6 +11,7 @@
         android:layout_above="@+id/linear">
 
         <ImageView
+            android:id="@+id/bookGambar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/bg"
@@ -47,6 +48,7 @@
                     android:layout_marginBottom="30dp">
 
                     <TextView
+                        android:id="@+id/bookNama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -60,6 +62,7 @@
                         android:layout_marginLeft="16dp" />
 
                     <TextView
+                        android:id="@+id/bookLokasi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Alamat"
@@ -94,11 +97,12 @@
             android:layout_marginLeft="16dp">
 
             <TextView
+                android:id="@+id/bookHarga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="&#82;&#112; Harga"
-                android:textSize="22dp"
-                android:textColor="@color/text" />
+                android:text="Rp. 250.000"
+                android:textColor="@color/text"
+                android:textSize="22dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -377,6 +381,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#04bebd"
+        android:clickable="true"
         android:text="Booking  &#82;&#112; Harga"
         android:textSize="20dp"
         android:textColor="#fff"

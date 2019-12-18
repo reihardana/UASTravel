@@ -40,7 +40,7 @@ public class PaketWisata extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragmPaent
         View view = inflater.inflate(R.layout.fragment_paket_wisata, container, false);
@@ -65,11 +65,15 @@ public class PaketWisata extends Fragment {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull PaketViewHolder paketViewHolder, int i, @NonNull Paket paket) {
+            protected void onBindViewHolder(@NonNull PaketViewHolder paketViewHolder, int i, @NonNull final Paket paket) {
                 paketViewHolder.bindToPaket(paket, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(getActivity(), BookPacketActivity.class);
+                        intent.putExtra("NAMA_PAKET", paket.nama);
+                        intent.putExtra("LOKASI_PAKET", paket.lokasi);
+                        intent.putExtra("HARGA_PAKET", paket.harga);
+                        intent.putExtra("GAMBAR_PAKET", paket.gambar);
                         startActivity(intent);
                     }
                 });
