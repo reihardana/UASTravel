@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:text="Amaris Hotel"
                     android:textStyle="italic"
-                    android:textSize="26dp"
+                    android:textSize="20dp"
                     />
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="20dp"
+                            android:textSize="16dp"
                             android:text="4"
                             android:textStyle="bold"
                             android:fontFamily="@font/mm" />
@@ -86,7 +86,7 @@
                             android:layout_height="wrap_content"
                             android:text="Days"
                             android:fontFamily="@font/mm"
-                            android:textSize="20dp"
+                            android:textSize="14dp"
                             android:textStyle="bold"/>
                     </LinearLayout>
                     <ImageView
@@ -104,7 +104,7 @@
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="20dp"
+                            android:textSize="16dp"
                             android:text="3"
                             android:textStyle="bold"
                             android:fontFamily="@font/mm" />
@@ -113,7 +113,7 @@
                             android:layout_height="wrap_content"
                             android:text="Night"
                             android:fontFamily="@font/mm"
-                            android:textSize="20dp"
+                            android:textSize="14dp"
                             android:textStyle="bold"/>
                     </LinearLayout>
 
