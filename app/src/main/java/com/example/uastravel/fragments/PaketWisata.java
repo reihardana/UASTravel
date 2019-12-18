@@ -1,6 +1,7 @@
 package com.example.uastravel.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
 import com.example.uastravel.R;
+import com.example.uastravel.activities.BookPacketActivity;
 import com.example.uastravel.classes.Paket;
 import com.example.uastravel.classes.PaketViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -67,7 +69,8 @@ public class PaketWisata extends Fragment {
                 paketViewHolder.bindToPaket(paket, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        Intent intent = new Intent(getActivity(), BookPacketActivity.class);
+                        startActivity(intent);
                     }
                 });
             }
