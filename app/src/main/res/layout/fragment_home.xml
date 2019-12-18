@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment"
-    android:background="#FFFFFF">
+    android:background="#f5f5f5">
 
 
     <View
@@ -52,7 +52,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/booked"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@mipmap/calender_foreground"
@@ -62,7 +62,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/hotel"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="15dp"
@@ -72,7 +72,7 @@
                 android:src="@mipmap/hotel_foreground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView17"
+                app:layout_constraintStart_toEndOf="@+id/booked"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
@@ -86,7 +86,7 @@
                 android:clickable="true"
                 android:src="@mipmap/userprofile_foreground"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView17"
+                app:layout_constraintEnd_toStartOf="@+id/booked"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -122,9 +122,9 @@
                 android:fontFamily="@font/mm"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView17"
-                app:layout_constraintStart_toStartOf="@+id/imageView17"
-                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+                app:layout_constraintEnd_toEndOf="@+id/booked"
+                app:layout_constraintStart_toStartOf="@+id/booked"
+                app:layout_constraintTop_toBottomOf="@+id/booked" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -134,9 +134,9 @@
                 android:fontFamily="@font/mm"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView18"
-                app:layout_constraintStart_toStartOf="@+id/imageView18"
-                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+                app:layout_constraintEnd_toEndOf="@+id/hotel"
+                app:layout_constraintStart_toStartOf="@+id/hotel"
+                app:layout_constraintTop_toBottomOf="@+id/hotel" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

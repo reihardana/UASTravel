@@ -1,34 +1,27 @@
 package com.example.uastravel.fragments;
 
 
-import android.app.Activity;
 import android.content.Intent;
-import android.icu.util.ValueIterator;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.uastravel.R;
-import com.example.uastravel.activities.LoginActivity;
-import com.example.uastravel.activities.MainActivity;
+import com.example.uastravel.activities.HotelActivity;
 import com.example.uastravel.activities.ProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
 
-    private ImageView logout;
+    private ImageView logout, booked, hotel;
     private FirebaseAuth auth;
     public HomeFragment() {
         // Required empty public constructor
@@ -41,10 +34,24 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         logout = view.findViewById(R.id.logout);
+        booked = view.findViewById(R.id.booked);
+        hotel = view.findViewById(R.id.hotel);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), ProfileActivity.class));
+            }
+        });
+        booked.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ProfileActivity.class));
+            }
+        });
+        hotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), HotelActivity.class));
             }
         });
         return view;
