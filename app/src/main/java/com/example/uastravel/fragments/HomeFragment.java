@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.uastravel.R;
-import com.example.uastravel.activities.HotelActivity;
 import com.example.uastravel.activities.ProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -51,7 +50,7 @@ public class HomeFragment extends Fragment {
         hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), HotelActivity.class));
+                startActivity(new Intent(getActivity(), ProfileActivity.class));
             }
         });
         return view;

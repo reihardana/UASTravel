@@ -4,13 +4,13 @@ import com.google.firebase.database.Exclude;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Paket {
+public class Hotel {
     public String nama, lokasi, harga, gambar;
 
-    public Paket(){
+    public Hotel(){
     }
 
-    public Paket(String nama, String lokasi, String harga, String gambar) {
+    public Hotel(String nama, String lokasi, String harga, String gambar) {
         this.nama = nama;
         this.lokasi = lokasi;
         this.harga = harga;

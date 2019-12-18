@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.example.uastravel.R;
 import com.example.uastravel.fragments.HomeFragment;
-import com.example.uastravel.fragments.HotelFagment;
+import com.example.uastravel.fragments.HotelFragment;
 import com.example.uastravel.fragments.PaketWisata;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new PaketWisata();
                 break;
             case R.id.action_hotel:
-                fragment = new HotelFagment();
+                fragment = new HotelFragment();
                 break;
         }
         return loadFragment(fragment);
