@@ -23,6 +23,7 @@
                 android:layout_above="@+id/linear">
 
                 <ImageView
+                    android:id="@+id/bGambar"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:src="@drawable/bg1"
@@ -32,9 +33,35 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="top"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
                     android:padding="16dp">
+                    <TextView
+                        android:id="@+id/bNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingRight="5dp"
+                        android:text="Nama Hotel"
+                        android:background="@drawable/round"
+                        android:textSize="18dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:id="@+id/bLokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingRight="5dp"
+                        android:text="Lokasi Hotel"
+                        android:background="@drawable/round"
+                        android:textSize="18dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="16dp"/>
                 </LinearLayout>
 
             </FrameLayout>
@@ -148,11 +175,11 @@
 
                     <TextView
                         android:layout_weight="1"
-                        android:id="@+id/tv"
+                        android:id="@+id/bHarga"
                         android:textSize="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="	&#82;&#112; Harga"
+                        android:text="	Rp. Harga"
                         android:textColor="@color/subtext"
                         android:background="#0000"
                         android:padding="16dp"

@@ -62,11 +62,15 @@ public class HotelFragment extends Fragment {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull HotelViewHolder hotelViewHolder, int i, @NonNull Hotel hotel) {
+            protected void onBindViewHolder(@NonNull HotelViewHolder hotelViewHolder, int i, @NonNull final Hotel hotel) {
                 hotelViewHolder.bindToHotel(hotel, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(getActivity(), BookHotelActivity.class);
+                        intent.putExtra("NAMA_HOTEL", hotel.nama);
+                        intent.putExtra("LOKASI_HOTEL", hotel.lokasi);
+                        intent.putExtra("HARGA_HOTEL", hotel.harga);
+                        intent.putExtra("GAMBAR_HOTEL", hotel.gambar);
                         startActivity(intent);
                     }
                 });
