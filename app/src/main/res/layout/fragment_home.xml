@@ -150,7 +150,34 @@
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.05" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:src="@drawable/pantaimalang" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cari paket wisata tour pantai malang selatan dengan fasilitas lengkap dan harga yang hemat di kantong ?"
+                            android:textSize="13dp"
+                            android:textStyle="italic"
+                            android:fontFamily="@font/mm"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -162,7 +189,31 @@
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.05">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:src="@drawable/jeep" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sewa Jeep Bromo – wisata ke bromo tanpa tour?"
+                    android:textSize="13dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/mm"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CardView3"
@@ -175,7 +226,31 @@
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CardView1"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.25">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:src="@drawable/batu" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingin mencari agen perjalanan dengan paket wisata batu 2 hari 1 malam?"
+                    android:textSize="13dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/mm"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CardView4"
@@ -188,5 +263,29 @@
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.25">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:src="@drawable/tumpaksewu" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Terjun Tumpak sewu adalah salah satu air terjun paling ikonik dan Instagramable bagi para penggemar fotografi"
+                    android:textSize="13dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/mm"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
