@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
  */
 public class HomeFragment extends Fragment {
 
-    private ImageView logout, booked, hotel;
+    private ImageView logout, booked, hotel, homePkt1, homePkt2, homePkt3, homePkt4;
     private FirebaseAuth auth;
     public HomeFragment() {
         // Required empty public constructor
@@ -34,6 +34,11 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         logout = view.findViewById(R.id.logout);
         booked = view.findViewById(R.id.booked);
+        homePkt1 = view.findViewById(R.id.homePkt1);
+        homePkt2 = view.findViewById(R.id.homePkt2);
+        homePkt3 = view.findViewById(R.id.homePkt3);
+        homePkt4 = view.findViewById(R.id.homePkt4);
+
         hotel = view.findViewById(R.id.hotel);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +56,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), ProfileActivity.class));
+            }
+        });
+        homePkt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new PaketWisata();
+
             }
         });
         return view;
